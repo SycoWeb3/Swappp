@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en" class="bg-orange-100 dark:bg-gray-900">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -16,7 +16,7 @@
     }
   </script>
 </head>
-<body class="transition-all bg-orange-100 dark:bg-gray-900 text-gray-900 dark:text-white min-h-screen flex flex-col items-center justify-center p-6">
+<body class="transition-all text-gray-900 dark:text-white min-h-screen flex flex-col items-center justify-center p-6">
 
   <!-- Dark mode toggle -->
   <div class="absolute top-4 right-4">
@@ -113,7 +113,6 @@
       localStorage.setItem("theme", html.classList.contains("dark") ? "dark" : "light");
     }
 
-    // Apply saved theme on load
     (function () {
       const savedTheme = localStorage.getItem("theme");
       if (savedTheme === "dark") {
